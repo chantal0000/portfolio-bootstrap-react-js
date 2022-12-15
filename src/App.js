@@ -1,6 +1,6 @@
 import './App.css';
 import BtsNavbar from "./components/navbar";
-
+import MyPageFooter from "./components/footer";
 
 
 function App() {
@@ -8,7 +8,8 @@ function App() {
             <BtsNavbar></BtsNavbar>
 
             <div className="App">
-                <p className="">Hello World</p>
+                <p className="">Hello World, under construction</p>
+                <MyPageFooter></MyPageFooter>
             </div>
         </>
 
