@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/*Api Playground Style*/
+
+.ModalBody{
+  height: 80vh;
+  background: linear-gradient(128deg, #DEBACE, #61dafb, transparent);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+

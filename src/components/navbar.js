@@ -7,7 +7,7 @@ function BtsNavbar() {
         {/*sticky-top navbar stays when you scroll*/}
         <Navbar bg='secondary' expand="md" className="sticky-top">
             <Container>
-                <NavbarBrand>Portfolio</NavbarBrand>
+                <NavbarBrand><a href="/">Portfolio</a></NavbarBrand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                 <Navbar.Collapse id="basic-navbar-nav">
                     {/*ms-auto for pos left*/}
