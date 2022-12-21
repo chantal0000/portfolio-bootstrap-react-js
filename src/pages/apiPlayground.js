@@ -1,4 +1,4 @@
-import BtsNavbar from "../components/navbar";
+// import BtsNavbar from "../components/navbar";
 import {Modal} from "react-bootstrap";
 import {useState} from "react";
 
@@ -9,8 +9,7 @@ function ApiPlayground() {
     const closeApiModal = () => setShow(false); // when called with button, closes modal
     const openApiModal = () => setShow(true); //when called with onpressed will open the modal
 
-    return (
-        <>
+    return (<>
             {/*<BtsNavbar></BtsNavbar>*/}
 
             <section className="container-fluid ModalBody">
@@ -24,13 +23,12 @@ function ApiPlayground() {
                             </Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                            <div className="APIBody">Modal Body</div>
+                            <div className="APIBody"><p>hello</p></div>
                         </Modal.Body>
                     </Modal>
                 </div>
             </section>
-        </>
-    )
+        </>)
 }
 
 export default ApiPlayground;

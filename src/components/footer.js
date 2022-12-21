@@ -15,7 +15,7 @@ function MyPageFooter() {
     return (// jsx <> </>
         <>
             {/*section better for accessibility, when you browse with human assistant programs*/}
-            <section className="fixed-bottom bg-danger ">
+            <section className="fixed-bottom bg-light">
                 <div className="MyFooter">
                     <div className="container">
                         <FlexComponent>
