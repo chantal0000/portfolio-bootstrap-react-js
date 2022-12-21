@@ -5,7 +5,7 @@ import Contact from "./pages/contact.js";
 import ApiPlayground from "./pages/apiPlayground";
 import {Route, Routes} from 'react-router-dom';
 import NasaPhoto from "./pages/NasaPhoto";
-import {Link} from "react-router-dom";
+// import {Link} from "react-router-dom";
 
 function App() {
     return (<>
