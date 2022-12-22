@@ -24,10 +24,6 @@ function BtsNavbar() {
                             <Nav.Link href="/contact" className="nav-links"
                                       eventKey="/pages/contact.js">Contact</Nav.Link>
                         </Nav.Item>
-                        {/*<Nav.Item className="fs-5">*/}
-                        {/*    <Nav.Link href="/NasaPhoto" className="nav-links"*/}
-                        {/*              eventKey="/pages/NasaPhoto.js">Images Testing File</Nav.Link>*/}
-                        {/*</Nav.Item>*/}
                     </Nav>
                 </Navbar.Collapse>
 
