@@ -5,7 +5,7 @@ import "./styles/navbar.css"
 function BtsNavbar() {
     return (<>
         {/*sticky-top navbar stays when you scroll*/}
-        <Navbar expand="md" className="sticky-top">
+        <Navbar bg="success" expand="md" className="sticky-top">
             <Container>
                 <NavbarBrand><a href="/">Portfolio</a></NavbarBrand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>
