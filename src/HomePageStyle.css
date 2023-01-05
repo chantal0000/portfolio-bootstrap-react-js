@@ -1,0 +1,16 @@
+.BannerContainer {
+ height: 60vh;
+ background: transparent;
+}
+.BannerRow{
+ height: 100%;
+}
+.MediaCol {
+border: 1px #282c34 solid;
+height: 100%
+}
+
+.BannerInfo{
+ border: 1px #dbc solid;
+ height: 100%
+}
