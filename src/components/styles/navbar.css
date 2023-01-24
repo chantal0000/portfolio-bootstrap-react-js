@@ -1,4 +1,27 @@
 
+
+.navbar {
+    background: #EEEEEE;
+    /*font-family: 'Raleway', sans-serif;*/
+    font-family: 'Noto Sans JP', sans-serif;
+    /*font-weight: bold;*/
+    color: black;
+    border-bottom: 0.5px solid black;
+    justify-content: space-between;
+}
+
+.logo {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.nav-links{
+    font-size: 14px;
+    padding-left:100px !important;
+    /*padding-right:30px; !important;*/
+}
+
 /*nav-items change color when you hover over them*/
 .nav-links:hover {
     color: #DEBACE;

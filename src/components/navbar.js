@@ -5,15 +5,15 @@ import "./styles/navbar.css"
 function BtsNavbar() {
     return (<>
         {/*sticky-top navbar stays when you scroll*/}
-        <Navbar bg="success" expand="md" className="sticky-top">
+        <Navbar expand="md" className="navbar sticky-top">
             <Container>
-                <NavbarBrand><a href="/">Portfolio</a></NavbarBrand>
+                <NavbarBrand><a className="logo" href="/">Chantal Buerger</a></NavbarBrand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                 <Navbar.Collapse id="basic-navbar-nav">
                     {/*ms-auto for pos left*/}
-                    <Nav className="ms-auto" bg="primary">
+                    <Nav className="links-container ms-auto">
                         <Nav.Item className="fs-5">
-                            <Nav.Link className="nav-links" href="/index.js">Home</Nav.Link>
+                            <Nav.Link className="nav-links" href="/">Home</Nav.Link>
                         </Nav.Item>
                         <Nav.Item className="fs-5">
                             <Nav.Link
