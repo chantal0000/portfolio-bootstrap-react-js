@@ -1,18 +1,19 @@
 import {Container, Row, Col} from "react-bootstrap"
-import style from "../HomePageStyle.css"
+import style from "./styles/HomePageStyle.css"
 import Blog from "../components/blog";
 import {ArrowDown} from 'react-bootstrap-icons';
-import Projects from "./carousel"
+import Projects from "./projects"
+
 function Homepage() {
-    return (
-        <><Container fluid className="Welcome-Container">
+    return (<><Container fluid className="Welcome-Container">
             <Row className="WelcomeRow">
                 <Col>
                     <div className="box">
                         <div className="Intro">
-                            <h1 className="display-1">Hello, I'm Chantal <svg  id="rotate" xmlns="http://www.w3.org/2000/svg"
-                                                                               width="16" height="16" fill="currentColor"
-                                                                               className="bi bi-emoji-smile-upside-down"
+                            <h1 className="display-1">Hello, I'm Chantal <svg id="rotate"
+                                                                              xmlns="http://www.w3.org/2000/svg"
+                                                                              width="16" height="16" fill="currentColor"
+                                                                              className="bi bi-emoji-smile-upside-down"
                                                                               viewBox="0 0 16 16">
                                 <path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zm0-1a8 8 0 1 1 0 16A8 8 0 0 1 8 0z"/>
                                 <path
@@ -21,7 +22,8 @@ function Homepage() {
 
                         </div>
                         <div className="Intro-Text">
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            <p>I'm a web developer based in Berlin, Germany. Lorem ipsum dolor sit amet, consetetur
+                                sadipscing elitr, sed diam nonumy eirmod tempor
                                 invidunt
                                 ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
                                 justo
@@ -44,7 +46,14 @@ function Homepage() {
                 <Row className="BannerRow">
                     {/*<Col className="MediaCol col-sm-6 col-md-4 col-lg-8">*/}
                     <Col>
-                        <Projects></Projects>
+                        <Container className="container">
+                            <Row className="header">
+                                <Col><h1>project collection</h1></Col>
+                                {/*<Col><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt*/}
+                                {/*    ut labore et dolore magna aliquyam erat, sed diam voluptua. </p></Col>*/}
+                                <Col><p>check out my GitHub for all my work [button GH]</p></Col>
+                            </Row>
+                        </Container>
                     </Col>
                     {/*<Col className="BannerInfo col-sm-6 col-md-8 col-lg-4">*/}
                     {/*    <p>Banner RIGHT</p>*/}
@@ -54,20 +63,19 @@ function Homepage() {
             <Container fluid className="Education_Projects">
                 <Container>
                     <Row>
-                        <Col className="col-3">
-                            <Blog></Blog>
+                        <Col className="col-3">1<h1>sdfnkjdhfjksdfjkdjskfhjkdf</h1>
+                            {/*<Blog></Blog>*/}
                         </Col>
-                        <Col className="col-3">2
+                        <Col className="col-3"><Projects></Projects>
                         </Col>
-                        <Col className="col-3"><Blog></Blog>
-                        </Col>
-                        <Col className="col-3">4
-                        </Col>
+                        {/*<Col className="col-3"><Blog></Blog>*/}
+                        {/*</Col>*/}
+                        {/*<Col className="col-3">4*/}
+                        {/*</Col>*/}
                     </Row>
                 </Container>
             </Container>
-        </>
-    )
+        </>)
 }
 
 export default Homepage;

@@ -1,0 +1,30 @@
+.BannerContainer {
+ /*height: 60vh;*/
+ /*background: transparent;*/
+ background: #EEEEEE;
+ border-top: solid black 0.5px;
+ border-bottom: solid black 0.5px;
+}
+
+.BannerContainer h1 {
+ font-family: 'Merriweather', serif;
+}
+
+.BannerContainer p {
+ font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+.BannerRow{
+ height: 100%;
+}
+.MediaCol {
+border: 1px #282c34 solid;
+height: 100%
+}
+
+.BannerInfo{
+ border: 1px #dbc solid;
+ height: 100%
+}
+

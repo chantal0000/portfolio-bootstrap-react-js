@@ -134,10 +134,5 @@ svg:hover {
     transform: rotate(360deg);
 }
 
-/*projects*/
 
-.project-img {
-    object-fit: contain;
-    max-width: 100%;
-    max-height: 100%;
-}
+
