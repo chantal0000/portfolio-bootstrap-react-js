@@ -13,7 +13,7 @@ function BtsNavbar() {
                     {/*ms-auto for pos left*/}
                     <Nav className="links-container ms-auto">
                         <Nav.Item className="fs-5">
-                            <Nav.Link className="nav-links" href="/">Home</Nav.Link>
+                            <Nav.Link className="nav-links" href="/">HOME</Nav.Link>
                         </Nav.Item>
                         <Nav.Item className="fs-5">
                             <Nav.Link
@@ -22,7 +22,7 @@ function BtsNavbar() {
                         </Nav.Item>
                         <Nav.Item className="fs-5">
                             <Nav.Link href="/contact" className="nav-links"
-                            >Contact</Nav.Link>
+                            >CONTACT</Nav.Link>
                         </Nav.Item>
                     </Nav>
                 </Navbar.Collapse>

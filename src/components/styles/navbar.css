@@ -3,8 +3,10 @@
 .navbar {
     background: #EEEEEE;
     /*font-family: 'Raleway', sans-serif;*/
-    font-family: 'Noto Sans JP', sans-serif;
+    /*font-family: 'Noto Sans JP', sans-serif;*/
     /*font-weight: bold;*/
+    font-family: 'Roboto Condensed', sans-serif;
+    /*font-weight: lighter;*/
     color: black;
     border-bottom: 0.5px solid black;
     justify-content: space-between;
