@@ -52,19 +52,19 @@ function Homepage() {
                 </Row>
             </Container>
             <Container fluid className="Education_Projects">
-                {/*<Container>*/}
-                {/*    <Row>*/}
-                {/*        <Col className="col-3">*/}
-                {/*            <Blog></Blog>*/}
-                {/*        </Col>*/}
-                {/*        <Col className="col-3">2*/}
-                {/*        </Col>*/}
-                {/*        <Col className="col-3"><Blog></Blog>*/}
-                {/*        </Col>*/}
-                {/*        <Col className="col-3">4*/}
-                {/*        </Col>*/}
-                {/*    </Row>*/}
-                {/*</Container>*/}
+                <Container>
+                    <Row>
+                        <Col className="col-3">
+                            <Blog></Blog>
+                        </Col>
+                        <Col className="col-3">2
+                        </Col>
+                        <Col className="col-3"><Blog></Blog>
+                        </Col>
+                        <Col className="col-3">4
+                        </Col>
+                    </Row>
+                </Container>
             </Container>
         </>
     )

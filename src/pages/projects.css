@@ -1,0 +1,22 @@
+*{
+    background: #EEEEEE;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-family: 'Merriweather', serif;
+
+}
+
+p {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container{
+    /*border-top: black solid 0.5px;*/
+
+}
+.header{
+    height: 10vh;
+}
