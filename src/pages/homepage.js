@@ -47,8 +47,6 @@ function Homepage() {
                 {/*    <p>Banner RIGHT</p>*/}
                 {/*</Col>*/}
             </Row>
-
-
         </Container>
         <Container fluid className="Education-Project p-5">
             <Row>

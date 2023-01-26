@@ -10,7 +10,6 @@ function App() {
                 <BtsNavbar></BtsNavbar>
                 <Routes>
                     <Route path="/" element={<HomePage/>}></Route>
-                    {/*<Route path="/projects"></Route>*/}
                     <Route path="/contact" element={<Contact/>}></Route>
                     {/*<Route path="/about" element={<About/>}></Route>*/}
                 </Routes>

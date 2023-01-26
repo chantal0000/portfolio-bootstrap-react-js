@@ -16,9 +16,6 @@ function BtsNavbar() {
                             <Nav.Link className="nav-links" href="/">HOME</Nav.Link>
                         </Nav.Item>
                         <Nav.Item className="fs-5">
-                            <Nav.Link className="nav-links" href="/projects">PROJECTS</Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item className="fs-5">
                             <Nav.Link
                                 href="/about" className="nav-links">ABOUT</Nav.Link>
                         </Nav.Item>
