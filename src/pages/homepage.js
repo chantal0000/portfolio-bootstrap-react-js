@@ -1,11 +1,12 @@
 import {Container, Row, Col} from "react-bootstrap"
 import style from "./styles/HomePageStyle.css"
 import Blog from "../components/blog";
-import {ArrowDown} from 'react-bootstrap-icons';
+import {ArrowDown, EmojiSmileUpsideDown} from 'react-bootstrap-icons';
 import Projects from "./projects"
 
 function Homepage() {
-    return (<><Container fluid className="Welcome-Container">
+    return (<>
+        <Container fluid className="Welcome-Container">
             <Row className="WelcomeRow">
                 <Col>
                     <div className="box">
@@ -73,22 +74,6 @@ function Homepage() {
                 <Col><Projects></Projects></Col>
             </Row>
         </Container>
-
-            {/*<Container fluid className="Education_Projects">*/}
-            {/*    <Container>*/}
-            {/*        <Row>*/}
-            {/*            <Col className="col-3">1<Projects></Projects>*/}
-            {/*            </Col>*/}
-            {/*            <Col className="col-3">2<Projects></Projects>*/}
-            {/*            </Col>*/}
-            {/*        </Row>*/}
-            {/*        <Row>*/}
-            {/*            <Col className="col-3">3<Projects></Projects>*/}
-            {/*        </Col>*/}
-            {/*            <Col className="col-3">4<Projects></Projects>*/}
-            {/*            </Col></Row>*/}
-            {/*    </Container>*/}
-            {/*</Container>*/}
         </>)
 }
 
