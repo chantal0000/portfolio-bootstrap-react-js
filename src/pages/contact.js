@@ -1,8 +1,9 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
 import sw2 from 'sweetalert2';
-import {Form, Button} from 'react-bootstrap'
+import {Form, Button, Row, Col, Container} from 'react-bootstrap'
 import {useState} from "react";
+import {ArrowDown, EmojiSmileUpsideDown} from 'react-bootstrap-icons';
 
 // keys are needed to set up private API connection emailjs
 const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
@@ -45,56 +46,90 @@ function Contact() {
     }
 
     // UI section
-    return (<div className="FormWrapper">
+    return (<>
+        <Container fluid className="BannerContainer">
+            <Row className="BannerRow">
+                <Col>
+                    <Container className="container">
+                        <Row className="header">
+                            <Col><h1>Let's <EmojiSmileUpsideDown className="bi"
+                                                                 size={20}/> connect <EmojiSmileUpsideDown
+                                className="bi"
+                                size={20}/> collaborate <EmojiSmileUpsideDown className="bi"
+                                                                              size={20}/> cocreate <EmojiSmileUpsideDown
+                                className="bi"
+                                size={20}/></h1></Col>
+                            {/*<Col><p>[GitHub] [LinkedIn]</p></Col>*/}
+                        </Row>
+                    </Container>
+                </Col>
+            </Row>
+        </Container>
+
+
+        <div className="FormWrapper p-5">
             {/*noValidate disables the browsers default UI*/}
-            <Form noValidate validated={validated} onSubmit={handleSubmit}>
-                <Form.Group controlId="FormName"> {/*InputField: Name*/}
-                    <Form.Label>Name</Form.Label>
-                    <Form.Control
-                        // id="form-input-control-name"
-                        // value={name}
-                        name="from_name"
-                        placeholder="enter your name"
-                        type="text"
-                        required
-                    />
-                </Form.Group>{/*InputField: Name End*/}
+            <Row>
+                <Col>
+                    <h1>message me:</h1>
+                    <Form className="col-auto px-5" noValidate validated={validated} onSubmit={handleSubmit}>
+                        <Form.Group className="px-5" controlId="FormName"> {/*InputField: Name*/}
+                            {/*<Form.Label>Name</Form.Label>*/}
+                            <Form.Control
+                                className="m-2"
+                                name="from_name"
+                                placeholder="your name"
+                                type="text"
+                                required
+                            />
+                        </Form.Group>{/*InputField: Name End*/}
 
-                <Form.Group controlId="FormPronouns">{/*InputField: Pronouns*/}
-                    <Form.Label>Pronouns</Form.Label>
-                    <Form.Control
-                        // id="form-input-control-pronouns"
-                        name="pronouns"
-                        placeholder="enter your pronouns if you like"
-                        type="text"
-                    />
-                </Form.Group>{/*InputField: Pronouns End*/}
+                        <Form.Group className="px-5" controlId="FormPronouns">{/*InputField: Pronouns*/}
+                            {/*<Form.Label>Pronouns</Form.Label>*/}
+                            <Form.Control
+                                // id="form-input-control-pronouns"
+                                className="m-2"
+                                name="pronouns"
+                                placeholder="pronouns, if you like"
+                                type="text"
+                            />
+                        </Form.Group>{/*InputField: Pronouns End*/}
 
-                <Form.Group controlId="FormEmail">{/*InputField: Email*/}
-                    <Form.Label>Email</Form.Label>
-                    <Form.Control
-                        // id="form-input-control-email"
-                        name="reply_to"
-                        placeholder="enter your email"
-                        type="email"
-                        required
-                    />
-                </Form.Group> {/*InputField: Email End*/}
+                        <Form.Group className="px-5" controlId="FormEmail">{/*InputField: Email*/}
+                            {/*<Form.Label>Email</Form.Label>*/}
+                            <Form.Control
+                                // id="form-input-control-email"
+                                className="m-2"
+                                name="reply_to"
+                                placeholder="your e-mail"
+                                type="email"
+                                required
+                            />
+                        </Form.Group> {/*InputField: Email End*/}
 
-                <Form.Group controlId="FormInputField"> {/*InputField: Message*/}
-                    <Form.Label>Message</Form.Label>
-                    <Form.Control
-                        // id="form-input-control-message"
-                        placeholder="enter message"
-                        name="message"
-                        type="text-area"
-                        required
-                    />
-                </Form.Group> {/*InputField: Message End*/}
+                        <Form.Group className="px-5" controlId="FormInputField"> {/*InputField: Message*/}
+                            {/*<Form.Label>Message</Form.Label>*/}
+                            <Form.Control
+                                // id="form-input-control-message"
+                                className="m-2"
+                                placeholder="enter message"
+                                name="message"
+                                type="text-area"
+                                required
+                            />
+                        </Form.Group> {/*InputField: Message End*/}
 
-                <Button type="submit" className="btn btn-outline-light">yaaay, send the message and say hi</Button>
-            </Form>
-        </div>)
+                        <Button type="submit" className="btn btn-outline-light">yaaay, send the message [icon
+                            briefumschlag]</Button>
+                    </Form>
+                </Col>
+                <Col>
+                    <h1>LinkedIn icon</h1>
+                    <h1>GitHub icon</h1>
+                </Col>
+            </Row>
+        </div>
+    </>)
 }
 
 export default Contact;

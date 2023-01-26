@@ -37,7 +37,7 @@ function Homepage() {
                 {/*<Col className="MediaCol col-sm-6 col-md-4 col-lg-8">*/}
                 <Col>
                     <Container className="container">
-                        <Row className="header">
+                        <Row className="header text-center">
                             <Col><h1>project collection</h1></Col>
                             <Col><p>check out my GitHub for all my work [button GH]</p></Col>
                         </Row>

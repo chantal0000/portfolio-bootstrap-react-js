@@ -1,38 +1,38 @@
 .BannerContainer {
- /*height: 60vh;*/
- /*background: transparent;*/
- background: #EEEEEE;
- border-top: solid black 0.5px;
- border-bottom: solid black 0.5px;
+    /*height: 60vh;*/
+    /*background: transparent;*/
+    background: #EEEEEE;
+    border-top: solid black 0.5px;
+    border-bottom: solid black 0.5px;
 }
 
 .BannerContainer h1 {
- font-family: 'Merriweather', serif;
+    font-family: 'Merriweather', serif;
 }
 
 .BannerContainer p {
- font-family: 'Roboto Condensed', sans-serif;
-
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
-.BannerRow{
- height: 100%;
+.BannerRow {
+    height: 100%;
 }
+
 .MediaCol {
-border: 1px #282c34 solid;
-height: 100%
+    border: 1px #282c34 solid;
+    height: 100%
 }
 
-.BannerInfo{
- border: 1px #dbc solid;
- height: 100%
+.BannerInfo {
+    border: 1px #dbc solid;
+    height: 100%
 }
 
 .Education-Project {
- margin-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 
 .bi {
- vertical-align: baseline;
+    vertical-align: baseline;
 }
