@@ -59,22 +59,36 @@ function Homepage() {
                     {/*    <p>Banner RIGHT</p>*/}
                     {/*</Col>*/}
                 </Row>
+
+
+
             </Container>
-            <Container fluid className="Education_Projects">
-                <Container>
-                    <Row>
-                        <Col className="col-3">1<h1>sdfnkjdhfjksdfjkdjskfhjkdf</h1>
-                            {/*<Blog></Blog>*/}
-                        </Col>
-                        <Col className="col-3"><Projects></Projects>
-                        </Col>
-                        {/*<Col className="col-3"><Blog></Blog>*/}
-                        {/*</Col>*/}
-                        {/*<Col className="col-3">4*/}
-                        {/*</Col>*/}
-                    </Row>
-                </Container>
-            </Container>
+        <Container fluid className="Education-Project p-5">
+            <Row>
+                <Col><Projects></Projects></Col>
+                <Col><Projects></Projects></Col>
+            </Row>
+            <Row>
+                <Col><Projects></Projects></Col>
+                <Col><Projects></Projects></Col>
+            </Row>
+        </Container>
+
+            {/*<Container fluid className="Education_Projects">*/}
+            {/*    <Container>*/}
+            {/*        <Row>*/}
+            {/*            <Col className="col-3">1<Projects></Projects>*/}
+            {/*            </Col>*/}
+            {/*            <Col className="col-3">2<Projects></Projects>*/}
+            {/*            </Col>*/}
+            {/*        </Row>*/}
+            {/*        <Row>*/}
+            {/*            <Col className="col-3">3<Projects></Projects>*/}
+            {/*        </Col>*/}
+            {/*            <Col className="col-3">4<Projects></Projects>*/}
+            {/*            </Col></Row>*/}
+            {/*    </Container>*/}
+            {/*</Container>*/}
         </>)
 }
 

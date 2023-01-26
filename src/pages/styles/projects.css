@@ -1,22 +1,19 @@
-/**{*/
-/*    background: #EEEEEE;*/
-/*    margin: 0;*/
-/*    padding: 0;*/
-/*}*/
+*{
+    background: #EEEEEE;
+    margin: 0;
+    padding: 0;
+}
 
-/*h1{*/
-/*    font-family: 'Merriweather', serif;*/
+h1, .card-title {
+    font-family: 'Merriweather', serif;
 
-/*}*/
+}
 
-/*p {*/
-/*    font-family: 'Roboto Condensed', sans-serif;*/
-/*}*/
+p, .card.text, .link {
+    font-family: 'Roboto Condensed', sans-serif;
+}
 
-/*.container{*/
-/*    !*border-top: black solid 0.5px;*!*/
+#stack-text{
+    font-family: 'Roboto Condensed', sans-serif !important;
+}
 
-/*}*/
-/*.header{*/
-/*    height: 10vh;*/
-/*}*/
