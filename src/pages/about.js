@@ -53,7 +53,9 @@ function About() {
                                     </Carousel.Item>
                                 </Carousel>
                             </Col>
-                            {/*<Col><p>tech skills, soft skills</p></Col>*/}
+                            <Col><p>tech skills, sossdjkfnjkdnfjknsj
+                                kdfnjsnfjknsjkfnjsn
+                                jnsjkfnjksdnft skills</p></Col>
                         </Row>
                     </Container>
                 </Col>

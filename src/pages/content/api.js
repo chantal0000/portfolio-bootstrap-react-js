@@ -2,21 +2,21 @@ import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 // import style from "./styles/projects.css"
 import {Github, Globe} from 'react-bootstrap-icons';
-import img1 from "./images/api-img.png"
+import img1 from "./images/api.gif"
 
 function API() {
     return (
         <Card className="m-4">
             <Card.Img variant="top" src={img1}/>
             <Card.Body>
-                <Card.Title className="card-title">NASA | Astronomy picture of the day | API</Card.Title>
+                <Card.Title className="card-title">Astronomy picture of the day | API</Card.Title>
                 <Card.Text className="card-text">
                     A single page application website showing the Astronomy Picture of the day (APOD) API. Using
-                    JavaScript and React.
+                    JavaScript and React. more text......................................................
                 </Card.Text>
             </Card.Body>
             <ListGroup className="list-group-flush">
-                <ListGroup.Item classsName="stack-text" id="stack-text">JAVASCRIPT | REACT | API | BOOTSTRAP </ListGroup.Item>
+                <ListGroup.Item classsName="stack-text" id="stack-text">JAVASCRIPT | REACT | API | BOOTSTRAP | NETLIFY </ListGroup.Item>
 
             </ListGroup>
             <Card.Body>

@@ -1,13 +1,16 @@
 import {Container, Row, Col} from "react-bootstrap"
 import style from "./styles/HomePageStyle.css"
 import Blog from "../components/blog";
-import {ArrowDown, EmojiSmileUpsideDown} from 'react-bootstrap-icons';
+import {ArrowDown, EmojiSmileUpsideDown, Github} from 'react-bootstrap-icons';
 import Projects from "./projects"
 import API from "./content/api"
 import {HashLink} from 'react-router-hash-link';
 import {Link} from "react-router-dom";
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
+import Moodboard from "./content/moodboard";
+import Petition from "./content/petition";
+import MyTrivia from "./content/my-trivia";
 
 function Homepage() {
     return (<>
@@ -46,7 +49,7 @@ function Homepage() {
                     <Container id="section1">
                         <Row className="Header">
                             <Col className="Header-Item "><h1>project collection</h1></Col>
-                            <Col className="page-hero d-flex align-items-center justify-content-center"><p>check out my GitHub for all my work [button GH]</p></Col>
+                            <Col className="page-hero d-flex align-items-center justify-content-center"><p>check out my GitHub for more projects <Github size={30}></Github></p></Col>
                         </Row>
                     </Container>
                 </Col>
@@ -57,12 +60,12 @@ function Homepage() {
         </Container>
         <Container fluid className="Education-Project p-5">
             <Row>
-                <Col><API/></Col>
-                <Col><Projects></Projects></Col>
+                <Col><Petition/></Col>
+                <Col><Moodboard/></Col>
             </Row>
             <Row>
-                <Col><Projects></Projects></Col>
-                <Col><Projects></Projects></Col>
+                <Col><API/></Col>
+                <Col><MyTrivia/></Col>
             </Row>
         </Container>
     </>)

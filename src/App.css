@@ -116,6 +116,10 @@ svg:hover {
 
 /*}*/
 
-
+/*cards projects img height*/
+img.card-img-top{
+    /*max-height: 290px;*/
+    /*object-fit: cover;*/
+}
 
 
