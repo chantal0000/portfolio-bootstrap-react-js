@@ -4,12 +4,12 @@
     padding: 0;
 }
 
-h1, .card-title {
+.card-title {
     font-family: 'Merriweather', serif;
 
 }
 
-p, .card.text, .link {
+.card.text, .link {
     font-family: 'Roboto Condensed', sans-serif;
 }
 

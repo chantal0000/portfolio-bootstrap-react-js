@@ -1,3 +1,30 @@
+.Welcome-Container {
+    height: 95vh;
+    /*display: flex;*/
+    padding-top: 10%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    background: #EEEEEE;
+}
+
+.WelcomeRow p {
+    padding-left: 25%;
+    padding-right: 25%;
+
+}
+
+/*emoji*/
+.bi {
+    vertical-align: baseline;
+}
+
+.Intro {
+    padding-bottom: 3%;
+}
+.Intro-Text {
+    padding-bottom: 7rem;
+}
+
 .BannerContainer {
     /*height: 60vh;*/
     /*background: transparent;*/
@@ -6,33 +33,31 @@
     border-bottom: solid black 0.5px;
 }
 
-.BannerContainer h1 {
-    font-family: 'Merriweather', serif;
-}
-
-.BannerContainer p {
-    font-family: 'Roboto Condensed', sans-serif;
-}
-
 .BannerRow {
     height: 100%;
 }
 
-.MediaCol {
-    border: 1px #282c34 solid;
-    height: 100%
+.Header p {
+    margin: 0;
+    padding: 1rem;
 }
 
-.BannerInfo {
-    border: 1px #dbc solid;
-    height: 100%
+.Header h1 {
+    margin: 0;
+    padding: 0;
 }
+
+.Header-Item {
+   /*margin: 12px;*/
+}
+
+/*.MediaCol {*/
+/*    border: 1px #282c34 solid;*/
+/*    height: 100%*/
+/*}*/
 
 .Education-Project {
     margin-bottom: 60px;
 }
 
 
-.bi {
-    vertical-align: baseline;
-}
