@@ -1,3 +1,13 @@
 .About-Container {
     border-bottom: solid black 0.5px;
 }
+
+.carousel-caption {
+background: transparent;
+}
+.carousel-img {
+    /*max-height: 100rem;*/
+    /*max-width: 100rem;*/
+    object-fit: contain;
+}
+

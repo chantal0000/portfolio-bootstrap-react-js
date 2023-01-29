@@ -1,6 +1,8 @@
 import {Container, Row, Col, Carousel} from "react-bootstrap"
 import style from "./styles/about.css"
-
+import pic1 from "./images/outdoor.JPG"
+import pic2 from "./images/ich.JPG"
+import pic3 from "./images/work.JPG"
 // import {Carousel} from "react-bootstrap/Carousel";
 
 function About() {
@@ -23,28 +25,28 @@ function About() {
                     <Container>
                         <Row>
                             <Col>
-                                <Carousel>
-                                    <Carousel.Item>
-                                        <img className="d-block w-150"
-                                             src="http://skuld.bmsc.washington.edu/raster3d/examples/example2.jpeg"
+                                <Carousel className="carousel">
+                                    <Carousel.Item className="carousel-item">
+                                        <img className="carousel-img d-block w-100"
+                                             src={pic1}
                                              alt="about me"/>
-                                        <Carousel.Caption>
+                                        <Carousel.Caption className="carousel-caption">
                                             <h1>first slide</h1>
                                             <p>tex tex t xetx tex t</p>
                                         </Carousel.Caption>
                                     </Carousel.Item>
-                                    <Carousel.Item>
-                                        <img className="d-block w-150"
-                                             src="http://skuld.bmsc.washington.edu/raster3d/examples/example2.jpeg"
+                                    <Carousel.Item className="carousel-item">
+                                        <img className="carousel-img  d-block w-100"
+                                             src={pic2}
                                              alt="about me"/>
                                         <Carousel.Caption>
                                             <h1>second slide</h1>
                                             <p>tex tex t xetx tex t</p>
                                         </Carousel.Caption>
                                     </Carousel.Item>
-                                    <Carousel.Item>
-                                        <img className="d-block w-150"
-                                             src="http://skuld.bmsc.washington.edu/raster3d/examples/example2.jpeg"
+                                    <Carousel.Item className="carousel-item">
+                                        <img className="carousel-img  d-block w-100"
+                                             src={pic3}
                                              alt="about me"/>
                                         <Carousel.Caption>
                                             <h1>third slide</h1>
@@ -53,9 +55,7 @@ function About() {
                                     </Carousel.Item>
                                 </Carousel>
                             </Col>
-                            <Col><p>tech skills, sossdjkfnjkdnfjknsj
-                                kdfnjsnfjknsjkfnjsn
-                                jnsjkfnjksdnft skills</p></Col>
+                            <Col><h3>skills</h3><p>skills | skills2 | skills3 | more | more | more</p></Col>
                         </Row>
                     </Container>
                 </Col>

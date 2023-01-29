@@ -19,13 +19,13 @@ function Homepage() {
                 <Col>
                     <div className="box">
                         <div className="Intro">
-                            <h1 className="display-1">Hello, I'm Chantal <OverlayTrigger
+                            <h1 className="display-1">Hello, I'm Chantal <OverlayTrigger placement="bottom"
                                 overlay={<Tooltip>contact me!</Tooltip>}><Link to="/contact"><EmojiSmileUpsideDown
                                 className="bi"
                                 size={20} color="#FF7000"/></Link></OverlayTrigger></h1>
                         </div>
                         <div className="Intro-Text">
-                            <p>I'm a web developer based in Berlin, Germany. Lorem ipsum dolor sit amet, consetetur
+                            <p>I'm a full stack web developer based in Berlin, Germany. I love creating beautiful and fuctional websites.
                                 sadipscing elitr, sed diam nonumy eirmod tempor
                                 invidunt
                                 ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
