@@ -3,7 +3,7 @@ import emailjs from 'emailjs-com';
 import sw2 from 'sweetalert2';
 import {Form, Button, Row, Col, Container} from 'react-bootstrap'
 import {useState} from "react";
-import {ArrowDown, EmojiSmileUpsideDown} from 'react-bootstrap-icons';
+import {ArrowDown, EmojiSmileUpsideDown, Linkedin, Github, Send} from 'react-bootstrap-icons';
 
 // keys are needed to set up private API connection emailjs
 const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
@@ -56,7 +56,7 @@ function Contact() {
                                                                  size={20}/> connect <EmojiSmileUpsideDown
                                 className="bi"
                                 size={20}/> collaborate <EmojiSmileUpsideDown className="bi"
-                                                                              size={20}/> cocreate <EmojiSmileUpsideDown
+                                                                              size={20}/> co-create <EmojiSmileUpsideDown
                                 className="bi"
                                 size={20}/></h1></Col>
                             {/*<Col><p>[GitHub] [LinkedIn]</p></Col>*/}
@@ -71,7 +71,7 @@ function Contact() {
             {/*noValidate disables the browsers default UI*/}
             <Row>
                 <Col>
-                    <h1>message me:</h1>
+                    <h1>message me</h1>
                     <Form className="col-auto px-5" noValidate validated={validated} onSubmit={handleSubmit}>
                         <Form.Group className="px-5" controlId="FormName"> {/*InputField: Name*/}
                             {/*<Form.Label>Name</Form.Label>*/}
@@ -114,19 +114,21 @@ function Contact() {
                                 className="m-2"
                                 placeholder="enter message"
                                 name="message"
-                                type="text-area"
+                                as="textarea"
+                                rows={4}
                                 required
                             />
                         </Form.Group> {/*InputField: Message End*/}
 
-                        <Button type="submit" className="btn btn-outline-light">yaaay, send the message [icon
-                            briefumschlag]</Button>
+                        <Button type="submit" className="send-btn btn btn-outline-light">send message</Button>
                     </Form>
                 </Col>
                 <Col>
-                    <h1>LinkedIn icon</h1>
-                    <h1>GitHub icon</h1>
+                    <h1>get in touch</h1>
+                    <p><Linkedin size={40}></Linkedin> reach out on LinkedIn</p>
+                    <p><Github  size={40}/> check out my GitHub</p>
                 </Col>
+
             </Row>
         </div>
     </>)

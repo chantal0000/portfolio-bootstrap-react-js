@@ -7,21 +7,21 @@ function BtsNavbar() {
         {/*sticky-top navbar stays when you scroll*/}
         <Navbar expand="md" className="navbar sticky-top">
             <Container>
-                <NavbarBrand><a className="logo" href="/">Chantal Munja Buerger</a></NavbarBrand>
+                <NavbarBrand><a className="logo" href="/">Chantal M. Buerger</a></NavbarBrand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                 <Navbar.Collapse id="basic-navbar-nav">
                     {/*ms-auto for pos left*/}
                     <Nav className="links-container ms-auto">
                         <Nav.Item className="fs-5">
-                            <Nav.Link className="nav-links" href="/">HOME</Nav.Link>
+                            <Nav.Link className="nav-links" href="/">Home</Nav.Link>
                         </Nav.Item>
                         <Nav.Item className="fs-5">
                             <Nav.Link
-                                href="/about" className="nav-links">ABOUT</Nav.Link>
+                                href="/about" className="nav-links">About</Nav.Link>
                         </Nav.Item>
                         <Nav.Item className="fs-5">
                             <Nav.Link href="/contact" className="nav-links"
-                            >CONTACT</Nav.Link>
+                            >Contact</Nav.Link>
                         </Nav.Item>
                     </Nav>
                 </Navbar.Collapse>

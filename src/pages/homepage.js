@@ -22,7 +22,7 @@ function Homepage() {
                             <h1 className="display-1">Hello, I'm Chantal <OverlayTrigger placement="bottom"
                                 overlay={<Tooltip>contact me!</Tooltip>}><Link to="/contact"><EmojiSmileUpsideDown
                                 className="bi"
-                                size={20} color="#FF7000"/></Link></OverlayTrigger></h1>
+                                size={20} color="#ff5722"/></Link></OverlayTrigger></h1>
                         </div>
                         <div className="Intro-Text">
                             <p>I'm a full stack web developer based in Berlin, Germany. I love creating beautiful and fuctional websites.
@@ -38,7 +38,7 @@ function Homepage() {
                     {/*<div className="pronouns"><p>SHE/HER</p></div>*/}
                     <div className="check-out-projects">
                         <p>CHECK OUT MY PROJECTS</p>
-                        <HashLink smooth to='/#section1'> <ArrowDown size={30} color="#FF7000"/> </HashLink></div>
+                        <HashLink smooth to='/#section1'> <ArrowDown size={30} color="#ff5722"/> </HashLink></div>
                 </Col>
             </Row>
         </Container>

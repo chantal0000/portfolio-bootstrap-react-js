@@ -22,7 +22,7 @@ function MyPageFooter() {
                             {/*copy right img*/}
                             <p className="text-dark">Chantal's Portfolio <span>&#169;</span></p>
                             <br/>
-                            <p className="text-muted">2022</p>
+                            <p className="text-muted">2023</p>
                         </FlexComponent>
                     </div>
                 </div>

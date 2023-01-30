@@ -16,6 +16,10 @@
     font-size: 14px;
 }
 
+.logo:hover {
+    color: #ff5722;
+}
+
 .nav-links{
     font-size: 14px;
     padding-left:100px !important;
@@ -24,5 +28,5 @@
 
 /*nav-items change color when you hover over them*/
 .nav-links:hover {
-    color: #BFDB38;
+    color: #ff5722;
 }

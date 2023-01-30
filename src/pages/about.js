@@ -40,8 +40,9 @@ function About() {
                                              src={pic2}
                                              alt="about me"/>
                                         <Carousel.Caption>
-                                            <h1>second slide</h1>
-                                            <p>tex tex t xetx tex t</p>
+                                            {/*<h1>second slide</h1>*/}
+                                            <p>Whether I'm working on a new project or finding creative solutions to complex problems, I approach each opportunity with energy and enthusiasm, eager to tackle any obstacle that comes my way.</p>
+
                                         </Carousel.Caption>
                                     </Carousel.Item>
                                     <Carousel.Item className="carousel-item">
@@ -55,7 +56,7 @@ function About() {
                                     </Carousel.Item>
                                 </Carousel>
                             </Col>
-                            <Col><h3>skills</h3><p>skills | skills2 | skills3 | more | more | more</p></Col>
+                            <Col><h3>skills</h3><p>skills | skills2 | skills3 | more | more | more</p> <p></p></Col>
                         </Row>
                     </Container>
                 </Col>
