@@ -68,6 +68,7 @@ function Homepage() {
                 <Col><MyTrivia/></Col>
             </Row>
         </Container>
+
     </>)
 }
 

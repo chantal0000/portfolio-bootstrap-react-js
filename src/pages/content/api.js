@@ -2,7 +2,7 @@ import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 // import style from "./styles/projects.css"
 import {Github, Globe} from 'react-bootstrap-icons';
-import img1 from "./images/api.gif"
+import img1 from "./images/api-cut.gif"
 
 function API() {
     return (

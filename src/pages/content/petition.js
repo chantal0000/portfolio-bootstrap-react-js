@@ -1,7 +1,7 @@
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import {Github, Globe} from 'react-bootstrap-icons';
-import img1 from "./images/petition.gif"
+import img1 from "./images/petition-cut.gif"
 
 function Petition() {
     return (<Card className="m-4">
