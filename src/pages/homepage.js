@@ -11,6 +11,7 @@ import Tooltip from 'react-bootstrap/Tooltip';
 import Moodboard from "./content/moodboard";
 import Petition from "./content/petition";
 import MyTrivia from "./content/my-trivia";
+import arrow from "./images/arrow.png"
 
 function Homepage() {
     return (<>
@@ -25,15 +26,9 @@ function Homepage() {
                                 size={20} color="#ff5722"/></Link></OverlayTrigger></h1>
                         </div>
                         <div className="Intro-Text">
-                            <p>I'm a full stack web developer based in Berlin, Germany. I love creating beautiful and fuctional websites.
-                                sadipscing elitr, sed diam nonumy eirmod tempor
-                                invidunt
-                                ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                                justo
-                                duo
-                                dolores et ea rebum. </p>
+                            <p>I'm a Berlin-based Full Stack developer. I enjoy learning, and I'm eager to advance through new, interesting challenges. I'm currently looking for the ideal position so I can advance as a developer. I'm delighted to showcase some of my work here. </p>
                         </div>
-                        {/*<div className="web-dev"><p>WEB DEVELOPER</p></div>*/}
+                        {/*<div><img src={arrow} sizes={20}/></div>*/}
                     </div>
                     {/*<div className="pronouns"><p>SHE/HER</p></div>*/}
                     <div className="check-out-projects">

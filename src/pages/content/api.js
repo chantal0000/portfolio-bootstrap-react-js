@@ -11,8 +11,7 @@ function API() {
             <Card.Body>
                 <Card.Title className="card-title">Astronomy picture of the day | API</Card.Title>
                 <Card.Text className="card-text">
-                    A single page application website showing the Astronomy Picture of the day (APOD) API. Using
-                    JavaScript and React. more text......................................................
+                    A single page application website using the APOD API showing the Astronomy Picture of the day. Using JavaScript and React with a Bootstrap Modal.
                 </Card.Text>
             </Card.Body>
             <ListGroup className="list-group-flush">
