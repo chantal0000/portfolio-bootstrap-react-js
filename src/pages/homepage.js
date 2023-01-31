@@ -42,7 +42,7 @@ function Homepage() {
                         {/*<div><img src={arrow} sizes={20}/></div>*/}
                     </div>
                     {/*<div className="pronouns"><p>SHE/HER</p></div>*/}
-                    <div className="check-out-projects">
+                    <div className="check-out-projects" id="section1">
                         <p>CHECK OUT MY PROJECTS</p>
                         <HashLink smooth to='/#section1'> <ArrowDown size={30} color="#ff5722"/> </HashLink></div>
                 </Col>
@@ -52,11 +52,15 @@ function Homepage() {
             <Row className="BannerRow">
                 {/*<Col className="MediaCol col-sm-6 col-md-4 col-lg-8">*/}
                 <Col>
-                    <Container id="section1">
+                    <Container>
                         <Row className="Header">
                             <Col className="Header-Item"><h1>project collection</h1></Col>
-                            <Col xs={6}><p>Here is a sample of my most recent work. Some of them are personal projects, while others were created during my time attending the Spiced Academy Full Stack Web Dev Bootcamp and others during the intensive sessions I took with my mentor. On my GitHub, you can find more projects.</p></Col>
-                            <Col className="page-hero d-flex align-items-center justify-content-center"><a href="https://github.com/chantal0000">
+                            <Col className="Project-Text" xs={6}><p>Here is a sample of my most recent work. Some of
+                                them are personal projects, while others were created during my time attending the
+                                Spiced Academy Full Stack Web Dev Bootcamp and others during the intensive sessions I
+                                took with my mentor. On my GitHub, you can find more projects.</p></Col>
+                            <Col className="page-hero d-flex align-items-center justify-content-center"><a
+                                href="https://github.com/chantal0000">
                                 <Github size={30} color="black"></Github></a></Col>
                         </Row>
                     </Container>

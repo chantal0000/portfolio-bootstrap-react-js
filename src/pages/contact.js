@@ -125,8 +125,10 @@ function Contact() {
                 </Col>
                 <Col>
                     <h1>get in touch</h1>
-                    <p><Linkedin size={40}></Linkedin> reach out on LinkedIn</p>
-                    <p><Github  size={40}/> check out my GitHub</p>
+                    <p><a href="https://www.linkedin.com/in/chantal-m-buerger-722391130/"><Linkedin size={40} color="black"></Linkedin></a> reach out on LinkedIn</p>
+                    <p><a
+                        href="https://github.com/chantal0000">
+                        <Github size={40} color="black"></Github></a> check out my GitHub</p>
                 </Col>
 
             </Row>

@@ -3,22 +3,39 @@ import style from "./styles/about.css"
 import pic1 from "./images/outdoor.JPG"
 import pic2 from "./images/ich.JPG"
 import pic3 from "./images/work.JPG"
+import {Github} from "react-bootstrap-icons";
 // import {Carousel} from "react-bootstrap/Carousel";
 
 function About() {
     return (<>
-        <Container fluid className="About-Container">
-            <Row className="Banner-Row">
+        <Container fluid className="BannerContainer">
+            <Row className="BannerRow">
+                {/*<Col className="MediaCol col-sm-6 col-md-4 col-lg-8">*/}
                 <Col>
                     <Container>
                         <Row className="Header">
-                            <Col className="Header-Item "><h1>about me</h1></Col>
-                            <Col><p>tech skills, soft skills</p></Col>
+                            <Col className="Header-Item"><h1>about me</h1></Col>
+                            <Col className=""><p>skills</p></Col>
                         </Row>
                     </Container>
                 </Col>
+                {/*<Col className="BannerInfo col-sm-6 col-md-8 col-lg-4">*/}
+                {/*    <p>Banner RIGHT</p>*/}
+                {/*</Col>*/}
             </Row>
         </Container>
+        {/*<Container fluid className="About-Container">*/}
+        {/*    <Row className="Banner-Row">*/}
+        {/*        <Col>*/}
+        {/*            <Container>*/}
+        {/*                <Row className="Header">*/}
+        {/*                    <Col className="Header-Item"><h1>about me</h1></Col>*/}
+        {/*                    <Col><p>tech skills, soft skills</p></Col>*/}
+        {/*                </Row>*/}
+        {/*            </Container>*/}
+        {/*        </Col>*/}
+        {/*    </Row>*/}
+        {/*</Container>*/}
         <Container fluid>
             <Row>
                 <Col>
