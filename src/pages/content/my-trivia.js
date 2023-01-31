@@ -9,12 +9,11 @@ function MyTrivia() {
         <Card.Body>
             <Card.Title className="card-title">My Trivia | Quiz</Card.Title>
             <Card.Text className="card-text">
-                Online petition where people can register, log in, update profile, draw signature, redo signature,
-                view a list of all supporters who have signed and finally see all supports from the same location.
+                Trivia game where the questions come from the open trivia API. You can choose category, difficulty, type of questions and number of questions. For every correct answer you receive a point and see your final score at the end.
             </Card.Text>
         </Card.Body>
         <ListGroup className="list-group-flush">
-            <ListGroup.Item classsName="stack-text" id="stack-text">JAVASCRIPT | NODE.JS | BCRYPT | EXPRESS | HEROKU
+            <ListGroup.Item classsName="stack-text" id="stack-text">JAVASCRIPT | REACT | API | MUI | HEROKU
             </ListGroup.Item>
         </ListGroup>
         <Card.Body>
