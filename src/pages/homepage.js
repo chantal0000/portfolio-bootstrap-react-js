@@ -12,6 +12,13 @@ import Moodboard from "./content/moodboard";
 import Petition from "./content/petition";
 import MyTrivia from "./content/my-trivia";
 import arrow from "./images/arrow.png"
+import * as PropTypes from "prop-types";
+
+function ColItem(props) {
+    return null;
+}
+
+ColItem.propTypes = {href: PropTypes.string};
 
 function Homepage() {
     return (<>
@@ -21,12 +28,16 @@ function Homepage() {
                     <div className="box">
                         <div className="Intro">
                             <h1 className="display-1">Hello, I'm Chantal <OverlayTrigger placement="bottom"
-                                overlay={<Tooltip>contact me!</Tooltip>}><Link to="/contact"><EmojiSmileUpsideDown
+                                                                                         overlay={<Tooltip>contact
+                                                                                             me!</Tooltip>}><Link
+                                to="/contact"><EmojiSmileUpsideDown
                                 className="bi"
                                 size={20} color="#ff5722"/></Link></OverlayTrigger></h1>
                         </div>
                         <div className="Intro-Text">
-                            <p>I'm a Berlin-based Full Stack developer. I enjoy learning, and I'm eager to advance through new, interesting challenges. I'm currently looking for the ideal position so I can advance as a developer. I'm delighted to showcase some of my work here. </p>
+                            <p>I'm a Berlin-based Full Stack developer. I enjoy learning, and I'm eager to advance
+                                through new, interesting challenges. I'm currently looking for the ideal position so I
+                                can advance as a developer. I'm delighted to showcase some of my work here. </p>
                         </div>
                         {/*<div><img src={arrow} sizes={20}/></div>*/}
                     </div>
@@ -43,8 +54,10 @@ function Homepage() {
                 <Col>
                     <Container id="section1">
                         <Row className="Header">
-                            <Col className="Header-Item "><h1>project collection</h1></Col>
-                            <Col className="page-hero d-flex align-items-center justify-content-center"><p>check out my GitHub for more projects <Github size={30}></Github></p></Col>
+                            <Col className="Header-Item"><h1>project collection</h1></Col>
+                            <Col xs={6}><p>Here is a sample of my most recent work. Some of them are personal projects, while others were created during my time attending the Spiced Academy Full Stack Web Dev Bootcamp and others during the intensive sessions I took with my mentor. On my GitHub, you can find more projects.</p></Col>
+                            <Col className="page-hero d-flex align-items-center justify-content-center"><a href="https://github.com/chantal0000">
+                                <Github size={30} color="black"></Github></a></Col>
                         </Row>
                     </Container>
                 </Col>
