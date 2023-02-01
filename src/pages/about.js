@@ -63,7 +63,7 @@ function About() {
                                     </Carousel.Item>
                                 </Carousel>
                             </Col>
-                            {/*<Col><h3>skills</h3><p>HTML5 CSS3 JavaScript React JS Vue JS Redux jQuery Handlebars Node JS Express JS PostgreSQL MUI Bootstrap Firebase HEROKU NETLIFY</p> <p></p></Col>*/}
+                            {/*<Col><h3>skills</h3><p>Redux Handlebars Express JS</p> <p></p></Col>*/}
                         </Row>
                     </Container>
                 </Col>
