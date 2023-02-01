@@ -3,7 +3,9 @@
     /*height: 100vh;*/
     text-align: center;
 }
-
+* {
+    background: #EEEEEE;
+}
 h1 {
     font-family: 'Merriweather', serif;
     letter-spacing: -2.5px;
@@ -122,4 +124,6 @@ img.card-img-top{
     /*object-fit: cover;*/
 }
 
-
+.Footer {
+    border-top: solid black 0.5px;
+}

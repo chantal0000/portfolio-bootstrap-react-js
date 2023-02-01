@@ -8,7 +8,8 @@ import {Github} from "react-bootstrap-icons";
 
 function About() {
     return (<>
-        <Container fluid className="BannerContainer">
+
+        <Container fluid className="">
             <Row className="BannerRow">
                 {/*<Col className="MediaCol col-sm-6 col-md-4 col-lg-8">*/}
                 <Col>
@@ -24,18 +25,7 @@ function About() {
                 {/*</Col>*/}
             </Row>
         </Container>
-        {/*<Container fluid className="About-Container">*/}
-        {/*    <Row className="Banner-Row">*/}
-        {/*        <Col>*/}
-        {/*            <Container>*/}
-        {/*                <Row className="Header">*/}
-        {/*                    <Col className="Header-Item"><h1>about me</h1></Col>*/}
-        {/*                    <Col><p>tech skills, soft skills</p></Col>*/}
-        {/*                </Row>*/}
-        {/*            </Container>*/}
-        {/*        </Col>*/}
-        {/*    </Row>*/}
-        {/*</Container>*/}
+
         <Container fluid>
             <Row>
                 <Col>
@@ -73,7 +63,7 @@ function About() {
                                     </Carousel.Item>
                                 </Carousel>
                             </Col>
-                            <Col><h3>skills</h3><p>skills | skills2 | skills3 | more | more | more</p> <p></p></Col>
+                            {/*<Col><h3>skills</h3><p>HTML5 CSS3 JavaScript React JS Vue JS Redux jQuery Handlebars Node JS Express JS PostgreSQL MUI Bootstrap Firebase HEROKU NETLIFY</p> <p></p></Col>*/}
                         </Row>
                     </Container>
                 </Col>

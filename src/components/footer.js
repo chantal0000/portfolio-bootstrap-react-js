@@ -14,19 +14,12 @@ function MyPageFooter() {
 
     return (// jsx <> </>
         <>
-            {/*section better for accessibility, when you browse with human assistant programs*/}
-            <section className="fixed-bottom">
-                <div className="MyFooter">
-                    <div className="container">
-                        <FlexComponent>
-                            {/*copy right img*/}
-                            <p className="text-dark">Chantal's Portfolio <span>&#169;</span></p>
-                            <br/>
-                            <p className="text-muted">2023</p>
-                        </FlexComponent>
-                    </div>
-                </div>
-            </section>
+            <footer className="fixed-bottom Footer"><FlexComponent>
+                {/*copy right img*/}
+                <p className="text-muted">Chantal's Portfolio <span>&#169;</span></p>
+                <br/>
+                <p className="text-muted">2023</p>
+            </FlexComponent></footer>
         </>)
 }
 

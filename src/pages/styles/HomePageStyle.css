@@ -1,5 +1,5 @@
 .Welcome-Container {
-    height: 95vh;
+    height: 100vh;
     /*display: flex;*/
     padding-top: 10%;
     padding-bottom: 0;
@@ -68,4 +68,11 @@
 
 .Project-Text {
     text-align: left;
+}
+
+.Pronouns {
+    font-size: 20px;
+    /*color: grey;*/
+    /*font-family: 'Roboto Condensed', sans-serif;*/
+    /*font-weight: bold;*/
 }

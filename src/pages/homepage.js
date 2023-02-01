@@ -13,7 +13,7 @@ import Petition from "./content/petition";
 import MyTrivia from "./content/my-trivia";
 import arrow from "./images/arrow.png"
 import * as PropTypes from "prop-types";
-
+import pronouns from "./images/pronouns.png"
 function ColItem(props) {
     return null;
 }
@@ -26,23 +26,24 @@ function Homepage() {
             <Row className="WelcomeRow">
                 <Col>
                     <div className="box">
-                        <div className="Intro">
-                            <h1 className="display-1">Hello, I'm Chantal <OverlayTrigger placement="bottom"
+                        <div className="Intro row position-relative">
+                            <h1 className="display-1 col">Hello, I'm Chantal <OverlayTrigger placement="bottom"
                                                                                          overlay={<Tooltip>contact
                                                                                              me!</Tooltip>}><Link
                                 to="/contact"><EmojiSmileUpsideDown
                                 className="bi"
                                 size={20} color="#ff5722"/></Link></OverlayTrigger></h1>
+                            {/*<div className="Pronouns col position-absolute"><img className="Img-Pronouns" src={pronouns} alt="pronouns she/her img"/></div>*/}
+
                         </div>
                         <div className="Intro-Text">
-                            <p>I'm a Berlin-based Full Stack developer. I enjoy learning, and I'm eager to advance
+                            <p>I'm a German Berlin-based Full Stack developer (she/her). I enjoy learning, and I'm eager to advance
                                 through new, interesting challenges. I'm currently looking for the ideal position so I
-                                can advance as a developer. I'm delighted to showcase some of my work here. </p>
+                                can grow as a developer. I'm delighted to showcase some of my work here. </p>
                         </div>
                         {/*<div><img src={arrow} sizes={20}/></div>*/}
                     </div>
-                    {/*<div className="pronouns"><p>SHE/HER</p></div>*/}
-                    <div className="check-out-projects" id="section1">
+                    <div className="check-out-projects">
                         <p>CHECK OUT MY PROJECTS</p>
                         <HashLink smooth to='/#section1'> <ArrowDown size={30} color="#ff5722"/> </HashLink></div>
                 </Col>
@@ -57,8 +58,7 @@ function Homepage() {
                             <Col className="Header-Item"><h1>project collection</h1></Col>
                             <Col className="Project-Text" xs={6}><p>Here is a sample of my most recent work. Some of
                                 them are personal projects, while others were created during my time attending the
-                                Spiced Academy Full Stack Web Dev Bootcamp and others during the intensive sessions I
-                                took with my mentor. On my GitHub, you can find more projects.</p></Col>
+                                Spiced Academy Full Stack Web Dev Bootcamp. On my GitHub, you can find more projects.</p></Col>
                             <Col className="page-hero d-flex align-items-center justify-content-center"><a
                                 href="https://github.com/chantal0000">
                                 <Github size={30} color="black"></Github></a></Col>
@@ -70,7 +70,7 @@ function Homepage() {
                 {/*</Col>*/}
             </Row>
         </Container>
-        <Container fluid className="Education-Project p-5">
+        <Container fluid className="Education-Project p-5" id="section1">
             <Row>
                 <Col><Petition/></Col>
                 <Col><Moodboard/></Col>

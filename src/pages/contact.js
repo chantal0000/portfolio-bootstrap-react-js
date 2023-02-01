@@ -50,8 +50,8 @@ function Contact() {
         <Container fluid className="BannerContainer">
             <Row className="BannerRow">
                 <Col>
-                    <Container className="container">
-                        <Row className="header">
+                    <Container>
+                        <Row className="Header-Contact">
                             <Col><h1>Let's <EmojiSmileUpsideDown className="bi"
                                                                  size={20}/> connect <EmojiSmileUpsideDown
                                 className="bi"

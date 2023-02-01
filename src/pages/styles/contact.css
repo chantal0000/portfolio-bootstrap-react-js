@@ -2,3 +2,8 @@
     background: pink;
 }
 
+.Header-Contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
