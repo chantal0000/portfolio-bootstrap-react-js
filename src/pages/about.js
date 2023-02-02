@@ -1,64 +1,39 @@
 import pic1 from "./images/outdoor.JPG"
 import pic2 from "./images/ich.JPG"
 import pic3 from "./images/work.JPG"
-import {Container, Row, Col, Carousel} from "react-bootstrap"
+import pic4 from "./images/presenting.jpeg"
+import {Container, Row, Col} from "react-bootstrap"
 import style from "./styles/about.css"
 
 function About() {
     return (<>
-            <Container fluid className="">
-                <Row className="BannerRow">
-                    {/*<Col className="MediaCol col-sm-6 col-md-4 col-lg-8">*/}
-                    <Col>
-                        <Container>
-                            <Row className="Header">
-                                <Col className="Header-Item"><h1>about me</h1></Col>
-                                <Col className=""><p>skills</p></Col>
-                            </Row>
-                        </Container>
-                    </Col>
-                </Row>
-            </Container>
-            <Carousel className="Carousel">
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100 carousel-img"
-                        src={pic1}
-                        alt="First slide"
-                    />
-                    <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100 carousel-img"
-                        src={pic2}
-                        alt="Second slide"
-                    />
+        <Container fluid className="BannerContainer">
+            <Row className="BannerRow">
+                {/*<Col className="MediaCol col-sm-6 col-md-4 col-lg-8">*/}
+                <Col>
+                    <Container>
+                        <Row className="Header">
+                            <Col className="Header-Item"><h1>about me</h1></Col>
+                            <Col className=""><p>skills</p></Col>
+                        </Row>
+                    </Container>
+                </Col>
+            </Row>
+        </Container>
+        {/*container fluid, fill up all horizontal space*/}
+        <Container fluid className="Image-Grid">
+            <Row  className="Row1">
+                <Col className="m-2" style={{backgroundColor: "green"}}><img className="Img-Grid" src={pic1} alt="...text disc here"/></Col>
+                <Col className="m-2" style={{backgroundColor: "red"}}><img className="Img-Grid" src={pic1} alt="...text disc here"/></Col>
+            </Row>
+            <Row className="Row2">
+                <Col className="m-2" style={{backgroundColor: "deeppink"}}><img className="Img-Grid" src={pic1} alt="...text disc here"/></Col>
+                <Col  className="m-2" style={{backgroundColor: "blue"}}><img className="Img-Grid" src={pic1} alt="...text disc here"/></Col>
+                <Col className="m-2" style={{backgroundColor: "grey"}}><img className="Img-Grid" src={pic1} alt="...text disc here"/></Col>
+            </Row>
+        </Container>
 
-                    <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100 carousel-img"
-                        src={pic3}
-                        alt="Third slide"
-                    />
-
-                    <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>
-                            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                        </p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-            </Carousel>
-        </>);
+    </>);
 }
 
 export default About;

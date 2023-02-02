@@ -48,6 +48,7 @@ const ContactMe = () => {
                 <Row className="justify-content-center align-items-center">
                     <Col>
                         {/*    left section, linkedin and github connects*/}
+                        <p>insert photo of me here? as background?</p>
                         <p><a href="https://www.linkedin.com/in/chantal-m-buerger-722391130/"><Linkedin size={40}
                                                                                                         color="black"></Linkedin></a>
                         </p>
