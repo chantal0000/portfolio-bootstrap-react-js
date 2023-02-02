@@ -2,8 +2,16 @@
     background: pink;
 }
 
-.Header-Contact {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/*.Header-Contact {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*}*/
+
+.Contact-Form{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.Form-Text{
+    align-self: flex-start;
+    /*text-align: left !important;*/
 }

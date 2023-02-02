@@ -70,7 +70,7 @@ function Contact() {
         <div className="FormWrapper p-5">
             {/*noValidate disables the browsers default UI*/}
             <Row>
-                <Col>
+                <Col xs={10}>
                     <h1>message me</h1>
                     <Form className="col-auto px-5" noValidate validated={validated} onSubmit={handleSubmit}>
                         <Form.Group className="px-5" controlId="FormName"> {/*InputField: Name*/}
