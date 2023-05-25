@@ -32,16 +32,32 @@ const ContactMe = () => {
             {/*header section*/}
             <Container>
                 <Row>
-                    <Col>
-                        <h1>
+                    <Col className="Contact-Title">
+                        <h1 id="Contact-Title">
                             LET'S{" "}
-                            <EmojiSmileUpsideDown className="bi" size={20} />{" "}
+                            <EmojiSmileUpsideDown
+                                className="bi"
+                                color="#ff5722"
+                                size={20}
+                            />{" "}
                             CONNECT{" "}
-                            <EmojiSmileUpsideDown className="bi" size={20} />{" "}
+                            <EmojiSmileUpsideDown
+                                className="bi"
+                                color="#ff5722"
+                                size={20}
+                            />{" "}
                             COLLABORATE{" "}
-                            <EmojiSmileUpsideDown className="bi" size={20} />{" "}
+                            <EmojiSmileUpsideDown
+                                className="bi"
+                                color="#ff5722"
+                                size={20}
+                            />{" "}
                             CO-CREATE{" "}
-                            <EmojiSmileUpsideDown className="bi" size={20} />
+                            <EmojiSmileUpsideDown
+                                className="bi"
+                                color="#ff5722"
+                                size={20}
+                            />
                         </h1>
                     </Col>
                 </Row>
@@ -65,7 +81,7 @@ const ContactMe = () => {
                         </p>
                     </Col>
                     {/*// contact form | emailjs*/}
-                    <Col md={8}>
+                    <Col className="Form" md={8}>
                         <Form
                             className="Contact-Form"
                             ref={form}
@@ -77,7 +93,7 @@ const ContactMe = () => {
                             >
                                 <Form.Control
                                     type="text"
-                                    placeholder="Name"
+                                    placeholder="name"
                                     name="from_name"
                                     required
                                 ></Form.Control>
@@ -88,7 +104,7 @@ const ContactMe = () => {
                             >
                                 <Form.Control
                                     type="text"
-                                    placeholder="Pronouns"
+                                    placeholder="pronouns"
                                     name="pronouns"
                                 ></Form.Control>
                                 <Form.Text className="text-muted Form-Text">
@@ -105,7 +121,7 @@ const ContactMe = () => {
                             >
                                 <Form.Control
                                     type="email"
-                                    placeholder="Email"
+                                    placeholder="email"
                                     name="reply_to"
                                     required
                                 ></Form.Control>
@@ -122,7 +138,9 @@ const ContactMe = () => {
                                     required
                                 />
                             </Form.Group>
-                            <Button type="submit">Send</Button>
+                            <Button className="Submit-Button" type="submit">
+                                send
+                            </Button>
                         </Form>
                     </Col>
                 </Row>
