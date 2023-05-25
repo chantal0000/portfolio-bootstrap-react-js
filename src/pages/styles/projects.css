@@ -1,19 +1,18 @@
-*{
+* {
     /*background: #EEEEEE;*/
     margin: 0;
     padding: 0;
 }
 
 .card-title {
-    font-family: 'Merriweather', serif;
-
+    font-family: "Merriweather", serif;
 }
 
-.card.text, .link {
-    font-family: 'Roboto Condensed', sans-serif;
+.card.text,
+.link {
+    font-family: "Roboto Condensed", sans-serif;
 }
 
-#stack-text{
-    font-family: 'Roboto Condensed', sans-serif !important;
+#stack-text {
+    font-family: "Roboto Condensed", sans-serif;
 }
-

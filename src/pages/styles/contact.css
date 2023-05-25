@@ -1,17 +1,17 @@
+.Contact-Header {
+}
 .send-btn {
     background: pink;
 }
 
-/*.Header-Contact {*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    justify-content: center;*/
-/*}*/
-
-.Contact-Form{
-    font-family: 'Roboto Condensed', sans-serif;
+.Contact-Form {
+    font-family: "Inconsolata", monospace;
 }
-.Form-Text{
+.Form-Text {
     align-self: flex-start;
-    /*text-align: left !important;*/
+}
+
+.Contact-Form {
+    margin-top: 60px;
+    margin-bottom: 50px;
 }

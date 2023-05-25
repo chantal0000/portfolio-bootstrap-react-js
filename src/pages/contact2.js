@@ -1,9 +1,9 @@
-import React, {useRef} from "react";
+import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import sw2 from 'sweetalert2';
-import {Button, Col, Container, Form, Row} from "react-bootstrap";
-import {EmojiSmileUpsideDown, Github, Linkedin} from "react-bootstrap-icons";
-import styles from "./styles/contact.css"
+import sw2 from "sweetalert2";
+import { Button, Col, Container, Form, Row } from "react-bootstrap";
+import { EmojiSmileUpsideDown, Github, Linkedin } from "react-bootstrap-icons";
+import styles from "./styles/contact.css";
 
 // keys are needed to set up private API connection emailjs
 const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
@@ -15,65 +15,105 @@ const ContactMe = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, USER_ID).then((result) => {
-            alert("send successfully")
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text)
-        });
+        emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, USER_ID).then(
+            (result) => {
+                alert("send successfully");
+                console.log(result.text);
+            },
+            (error) => {
+                console.log(error.text);
+            }
+        );
         e.target.reset();
     };
 
-    return (<>
+    return (
+        <>
             {/*header section*/}
-            <Container fluid className="BannerContainer">
-                <Row className="BannerRow">
+            <Container>
+                <Row>
                     <Col>
-                        <Container>
-                            <Row className="Header-Contact">
-                                <Col><h1>Let's <EmojiSmileUpsideDown className="bi"
-                                                                     size={20}/> connect <EmojiSmileUpsideDown
-                                    className="bi"
-                                    size={20}/> collaborate <EmojiSmileUpsideDown className="bi"
-                                                                                  size={20}/> co-create <EmojiSmileUpsideDown
-                                    className="bi"
-                                    size={20}/></h1></Col>
-                            </Row>
-                        </Container>
+                        <h1>
+                            LET'S{" "}
+                            <EmojiSmileUpsideDown className="bi" size={20} />{" "}
+                            CONNECT{" "}
+                            <EmojiSmileUpsideDown className="bi" size={20} />{" "}
+                            COLLABORATE{" "}
+                            <EmojiSmileUpsideDown className="bi" size={20} />{" "}
+                            CO-CREATE{" "}
+                            <EmojiSmileUpsideDown className="bi" size={20} />
+                        </h1>
                     </Col>
                 </Row>
             </Container>
+
             {/*body section*/}
             <Container>
                 <Row className="justify-content-center align-items-center">
                     <Col>
                         {/*    left section, linkedin and github connects*/}
-                        <p>insert photo of me here? as background?</p>
-                        <p><a href="https://www.linkedin.com/in/chantal-m-buerger-722391130/"><Linkedin size={40}
-                                                                                                        color="black"></Linkedin></a>
+
+                        <p>
+                            <a href="https://www.linkedin.com/in/chantal-m-buerger-722391130/">
+                                <Linkedin size={40} color="black"></Linkedin>
+                            </a>
                         </p>
-                        <p><a
-                            href="https://github.com/chantal0000">
-                            <Github size={40} color="black"></Github></a></p>
+                        <p>
+                            <a href="https://github.com/chantal0000">
+                                <Github size={40} color="black"></Github>
+                            </a>
+                        </p>
                     </Col>
                     {/*// contact form | emailjs*/}
-                    <Col>
-                        <h1>message me</h1>
-                        <Form className="Contact-Form" ref={form} onSubmit={sendEmail}>
-                            <Form.Group className="mb-3" controlId="formBasicName">
-                                <Form.Control type="text" placeholder="Name" name="from_name" required></Form.Control>
+                    <Col md={8}>
+                        <Form
+                            className="Contact-Form"
+                            ref={form}
+                            onSubmit={sendEmail}
+                        >
+                            <Form.Group
+                                className="mb-3"
+                                controlId="formBasicName"
+                            >
+                                <Form.Control
+                                    type="text"
+                                    placeholder="Name"
+                                    name="from_name"
+                                    required
+                                ></Form.Control>
                             </Form.Group>
-                            <Form.Group className="mb-3" controlId="formBasicPronouns">
-                                <Form.Control type="text" placeholder="Pronouns" name="pronouns"></Form.Control>
-                                <Form.Text className="text-muted Form-Text"><p>which pronouns do you use? feel free to
-                                    share with me if you like. I use the
-                                    pronouns
-                                    she/her</p></Form.Text>
+                            <Form.Group
+                                className="mb-3"
+                                controlId="formBasicPronouns"
+                            >
+                                <Form.Control
+                                    type="text"
+                                    placeholder="Pronouns"
+                                    name="pronouns"
+                                ></Form.Control>
+                                <Form.Text className="text-muted Form-Text">
+                                    <p>
+                                        what are your pronouns? feel free to
+                                        share with me if you like. I use the
+                                        pronouns she/her
+                                    </p>
+                                </Form.Text>
                             </Form.Group>
-                            <Form.Group className="mb-3" controlId="formBasicEmail">
-                                <Form.Control type="email" placeholder="Email" name="reply_to" required></Form.Control>
+                            <Form.Group
+                                className="mb-3"
+                                controlId="formBasicEmail"
+                            >
+                                <Form.Control
+                                    type="email"
+                                    placeholder="Email"
+                                    name="reply_to"
+                                    required
+                                ></Form.Control>
                             </Form.Group>
-                            <Form.Group className="mb-3" controlId="formBasicMessage">
+                            <Form.Group
+                                className="mb-3"
+                                controlId="formBasicMessage"
+                            >
                                 <Form.Control
                                     placeholder="enter message"
                                     name="message"
@@ -92,4 +132,3 @@ const ContactMe = () => {
 };
 
 export default ContactMe;
-
