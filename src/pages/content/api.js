@@ -13,9 +13,10 @@ function API() {
                     Astronomy picture of the day || API
                 </Card.Title>
                 <Card.Text className="card-text">
-                    A single page application website using the APOD API showing
-                    the Astronomy Picture of the day. Using JavaScript and React
-                    with a Bootstrap Modal.
+                    A single-page application that utilizes the APOD (Astronomy
+                    Picture of the Day) API to display the captivating Astronomy
+                    Picture of the day. Using React, enhancing the user
+                    experience by incorporating a Bootstrap Modal component.
                 </Card.Text>
             </Card.Body>
             <ListGroup className="list-group-flush">

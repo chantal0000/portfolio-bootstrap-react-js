@@ -12,9 +12,10 @@ function Moodboard() {
                     Imageboard || Moodboard
                 </Card.Title>
                 <Card.Text className="card-text">
-                    A single page application - moodboard / board of images -
-                    where anyone can upload and share images together with a
-                    username, title and description
+                    A single-page application where users can upload and share
+                    images. Each uploaded image is associated with a username,
+                    title, and description. This application allows users to
+                    collaborate and view a collection of shared images.
                 </Card.Text>
             </Card.Body>
             <ListGroup className="list-group-flush">
