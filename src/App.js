@@ -1,12 +1,10 @@
 import "./App.css";
 import BtsNavbar from "./components/navbar";
 import MyPageFooter from "./components/footer";
-import ContactMe from "./pages/contact2.js";
+import ContactMe from "./pages/contact.js";
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/homepage";
-{
-    /* import About from "./pages/about"; */
-}
+
 function App() {
     return (
         <>

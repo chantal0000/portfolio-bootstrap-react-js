@@ -1,9 +1,8 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import sw2 from "sweetalert2";
 import { Button, Col, Container, Form, Row } from "react-bootstrap";
 import { EmojiSmileUpsideDown, Github, Linkedin } from "react-bootstrap-icons";
-import styles from "./styles/contact.css";
+import "./styles/contact.css";
 
 // keys are needed to set up private API connection emailjs
 const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;

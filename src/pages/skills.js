@@ -1,5 +1,5 @@
 import Skill from "./Skill";
-import style from "./styles/skills.css";
+import "./styles/skills.css";
 
 function Skills() {
     return (

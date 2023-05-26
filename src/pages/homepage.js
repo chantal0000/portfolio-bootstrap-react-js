@@ -1,13 +1,8 @@
 import { Container, Row, Col } from "react-bootstrap";
 // eslint-disable-next-line no-unused-vars
-import style from "./styles/HomePageStyle.css";
+import "./styles/HomePageStyle.css";
 // import Blog from "../components/blog";
-import {
-    ArrowDown,
-    EmojiSmileUpsideDown,
-    Github,
-    Linkedin,
-} from "react-bootstrap-icons";
+import { ArrowDown, EmojiSmileUpsideDown, Github } from "react-bootstrap-icons";
 // import Projects from "./projects"
 import API from "./content/api";
 import { Link } from "react-router-dom";
@@ -16,7 +11,6 @@ import Tooltip from "react-bootstrap/Tooltip";
 import Moodboard from "./content/moodboard";
 import Petition from "./content/petition";
 import MyTrivia from "./content/my-trivia";
-import * as PropTypes from "prop-types";
 import Skills from "./skills";
 import Typewriter from "typewriter-effect";
 import { HashLink } from "react-router-hash-link";
@@ -48,7 +42,7 @@ function Homepage() {
                                         </Link>
                                     </OverlayTrigger>
                                 </h1>
-                                <div class="typewriter">
+                                <div className="typewriter">
                                     <Typewriter
                                         options={{
                                             autoStart: true,

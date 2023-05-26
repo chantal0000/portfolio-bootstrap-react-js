@@ -20,7 +20,7 @@ function API() {
                 </Card.Text>
             </Card.Body>
             <ListGroup className="list-group-flush">
-                <ListGroup.Item classsName="stack-text" id="stack-text">
+                <ListGroup.Item className="stack-text" id="stack-text">
                     JAVASCRIPT | REACT | API | BOOTSTRAP | NETLIFY{" "}
                 </ListGroup.Item>
             </ListGroup>

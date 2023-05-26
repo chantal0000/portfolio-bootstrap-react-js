@@ -1,6 +1,6 @@
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
-import { Github, Globe } from "react-bootstrap-icons";
+import { Github } from "react-bootstrap-icons";
 import img1 from "./images/petition-cut.gif";
 
 function Petition() {
@@ -19,7 +19,7 @@ function Petition() {
                 </Card.Text>
             </Card.Body>
             <ListGroup className="list-group-flush">
-                <ListGroup.Item classsName="stack-text" id="stack-text">
+                <ListGroup.Item className="stack-text" id="stack-text">
                     JAVASCRIPT | NODE.JS | BCRYPT | EXPRESS | HEROKU
                 </ListGroup.Item>
             </ListGroup>
